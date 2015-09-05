@@ -1,0 +1,9 @@
+{
+  "name": "GAS-x86_64-highlighter",
+  "version": "0.0.1",
+  "description": "This is the greatest assembly language of All Time",
+  "engines": {
+    "atom": "*"
+  },
+  "repository": "https://github.com/calculuswhiz/atom-GAS-x86_64-highlighter"
+}

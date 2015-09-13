@@ -1,0 +1,3 @@
+'.source.x86':
+    'editor':
+        'commentStart': "// "

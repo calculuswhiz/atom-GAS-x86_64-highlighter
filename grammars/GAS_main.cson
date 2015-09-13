@@ -1,4 +1,4 @@
-'scopeName': 'source.s'
+'scopeName': 'source.x86'
 'name': 'GAS/AT&T x86/x64'
 'fileTypes': [
     's'

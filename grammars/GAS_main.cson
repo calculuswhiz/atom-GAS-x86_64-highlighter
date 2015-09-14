@@ -206,13 +206,13 @@
         'match': '(#|//).*$'
     }
     {
-        'name': 'comment.slashes'
-        'match': '^[ \\t]*/.*$'
-    }
-    {
         'begin': '/\\*'
         'end': '\\*/'
         'name': 'comment.multiline'
+    }
+    {
+        'name': 'comment.singleSlash'
+        'match': '^[ \\t]*/.*$'
     }
     {
         'name': 'keyword.label.assembly'

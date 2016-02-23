@@ -38,8 +38,8 @@ getbuf:
     movb    $(LENGTH+1), len
 clearstdin:
     movq    SYS_READ, %rax
-    movq    STDIN, %rdi 
-    movq    $junkChar, %rsi 
+    movq    STDIN, %rdi
+    movq    $junkChar, %rsi
     movq    $1, %rdx
     syscall
     cmpb    $'\n, junkChar

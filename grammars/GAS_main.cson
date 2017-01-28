@@ -192,8 +192,11 @@
         "match": "^[ \\t]*/.*$"
     }
     {
-        "name": "keyword.label.assembly"
-        "match": "((\\s+|^)([A-Za-z$_.0-9]|C-[BA])+[:])"
+        "name": "label.assembly"
+        "match": "((\\s+|;|^)(([A-Za-z$_.0-9]|C-[BA])+[:]))"
+        "captures": {
+            "3": {"name":"keyword.label.assembly"}
+        }
     }
     {
         "name": "support.constant.alternatives"

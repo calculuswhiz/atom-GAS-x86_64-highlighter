@@ -1,6 +1,6 @@
 {
   "name": "GAS-x86_64-highlighter",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "This is the greatest assembly language of All Time",
   "engines": {
     "atom": "*"

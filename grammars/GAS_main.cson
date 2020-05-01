@@ -159,20 +159,24 @@
         "match": "\\b(?i:crc32[bwlq])(?!:)\\b"
     }
     {
-      "name": "entity.name.function.miscellaneous"
-      "match": "\\b(?i:xstorerng|vmxoff|getsec|vpclmulqdq|movbe|invept|invvpid|vmload|blcfill|v(ld|st)mxcsr)(?!:)\\b"
+        "name": "entity.name.function.miscellaneous"
+        "match": "\\b(?i:xstorerng|vmxoff|getsec|vpclmulqdq|movbe|invept|invvpid|vmload|blcfill|v(ld|st)mxcsr)(?!:)\\b"
     }
     {
         "name": "comment.define"
         "match": "^\\s*##.*$"
     }
     {
-      "name": "variable.parameter.other_keywords"
-      "match": "(#(alloc|write|execinstr|exclude|tls)|@((prog|no)bits|note|((pre)?init|fini)_array)|[#@%]((gnu_indirect_)?function|(tls_)?object|common|notype|gnu_unique_object)|comdat|\\.gnu\\.linkonce|discard|one_only|same_(size|contents)|STT_((GNU_I)?FUNC|OBJECT|TLS|COMMON|NOTYPE))\\b"
+        "name": "variable.parameter.other_keywords"
+        "match": "(#(alloc|write|execinstr|exclude|tls)|@((prog|no)bits|note|((pre)?init|fini)_array)|[#@%]((gnu_indirect_)?function|(tls_)?object|common|notype|gnu_unique_object)|comdat|\\.gnu\\.linkonce|discard|one_only|same_(size|contents)|STT_((GNU_I)?FUNC|OBJECT|TLS|COMMON|NOTYPE))\\b"
     }
     {
         "name": "support.constant.preprocessor"
-        "match": "^\\s*(?<!#)(#(#(?!#)|(un)?assert|define|elif|else|endif|error|ident|(ifn?|un)?def|if|import|include(_next)?|line|pragma|sccs|warning))|__(FILE|LINE|DATE|TIME(STAMP)?|STDC_(VERSION|HOSTED)?|GNUC|GNUC_MINOR|GNUC_PATCHLEVEL|VERSION|STRICT_ANSI|BASE_FILE|INCLUDE_LEVEL|OPTIMIZE|OPTIMIZE_SIZE|NO_INLINE|CHAR_UNSIGNED|CHAR_BIT|INT_SHORT|SCHAR_MAX|SHRT_MAX|INT_MAX|LONG_MAX|LONG_LONG_MAX|REGISTER_PREFIX|USER_LABEL_PREFIX)__\\b"
+        "match": "^\\s*(?<!#)(#(#(?!#)|(un)?assert|define|elif|else|endif|error|ident|(ifn?|un)?def|if|import|include(_next)?|line|pragma|sccs|warning))\\b"
+    }
+    {
+        "name": "support.constant.preprocessor"
+        "match": "\\b__(FILE|LINE|DATE|TIME(STAMP)?|STDC_(VERSION|HOSTED)?|GNUC(_MINOR|_PATCHLEVEL)?|VERSION|STRICT_ANSI|BASE_FILE|INCLUDE_LEVEL|OPTIMIZE(_SIZE)?|NO_INLINE|CHAR_UNSIGNED|CHAR_BIT|INT_SHORT|SCHAR_MAX|SHRT_MAX|INT_MAX|LONG_MAX|LONG_LONG_MAX|REGISTER_PREFIX|USER_LABEL_PREFIX)__\\b"
     }
     {
         "name": "support.constant.preprocessor"
